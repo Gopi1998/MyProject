@@ -1,0 +1,24 @@
+.fruit_information>.row>div>table img
+		{
+			cursor: -webkit-grab; cursor: grab;
+			background-color: #ffffb3;
+		}
+		.fruit_information
+		{
+			//background-color:#e8e8e8;
+		}
+		.add_fruit_information
+		{
+			margin-top: 2%;
+		}
+#btn1 {
+	border-radius: 12px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#btn1:hover {
+	border-radius: 12px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+}

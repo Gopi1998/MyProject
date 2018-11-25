@@ -1,0 +1,40 @@
+.container-fluid>.row>.title
+{
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	background-color: #99ffcc;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 40px;
+	color: solid black;
+}
+
+.container-fluid>.row
+{
+	
+	text-align: center;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+
+.container-fluid>.row>.retail
+{
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	background-color: #ccffff;
+}
+
+.container-fluid>.row>.buy
+{
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	background-color: #ff99cc;
+}

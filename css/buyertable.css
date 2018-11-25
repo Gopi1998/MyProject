@@ -1,0 +1,20 @@
+    .result_container>.row>div:nth-child(2)>.result>ul>li
+		{
+			margin-top: 2%;
+		}
+		.result_container>.row>div:nth-child(2)>.result>ul>li>span
+		{
+			margin-left: 5%;
+      display: inline-block;
+		}
+		.result_container>.row>div:nth-child(2)>.result>ul>li>button
+		{
+			float: right;
+			background-color: #ffff00;
+      border-radius: 40%;
+		}
+    .result_container>.row>.body
+    {
+      text-align: center;
+    }
+
