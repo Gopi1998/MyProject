@@ -1,0 +1,24 @@
+SCHEMAS : 
+	Retailregister (Name TEXT(255), retailer_email  VARCHAR(255), phone INT(10), Wallet INT(5) )
+	Buyerregister (Name TEXT(255), buyer_email  VARCHAR(255), phone INT(10), Wallet INT(5))
+	Transactions (retailer_email VARCHAR(255), buyer_email VARCHAR(255), Transaction_id  INT(10), Wallet INT(5), Transaction_date DATE)
+
+SQL QUERIES :
+
+1.Write the SQL to get the number of retailers available in the system.
+	SELECT count(retailer_email) FROM Retailregister;
+
+2.Write the SQL to get the shoppers count for each retailer (who purchased).
+	SELECT count(buyer_email) FROM Transactions WHERE retailer_email = ‘$_COOKIE[‘email’]’;
+
+3.Write the SQL to get all the shoppers count.
+	SELECT count(buyer_email) FROM Buyerregister;
+
+4.Write the SQL to get purchased amount per day WRT to a retailer.
+	SELECT count(retailer_email)*100 FROM Transactions WHERE retailer_email=’$_COOKIE[‘email’]’ AND DATE(‘timestamp’)=CURDATE();
+
+5.Write the SQL to find the top retailer based on number of purchases.
+	SELECT retailer_email FROM Transactions WHERE max(SELECT count(retailer_email) FROM transactions);
+
+6.Write the SQL to find a loyal shopper of any retailer based on the number of purchases more than the threshold.
+ 
